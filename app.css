@@ -1,0 +1,79 @@
+*{
+    font-size: large;
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+html{
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-name{
+    font-size: 25px;
+}
+
+.flex-container{
+    display: flex;
+    padding: 100px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 15px;
+    background-color: rgba(153, 153, 153, 0.671);
+}
+
+.input-margin{
+    margin: 10px 0px;
+}
+
+.age-margin{
+    margin-right: 23px;
+}
+
+.height-margin{
+    margin-right: 3px;
+}
+
+.gender-margin{
+    margin-right: 8px;
+}
+
+.textbox{
+    font-size: medium;
+    padding: 4px 8px;
+    width: 202px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.select-margin{
+    font-size: medium;
+    margin-left: 8px;
+    width: 300px;
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.button{
+    margin-top: 30px;
+    /* margin-left: 30px; */
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 108, 55);
+    color: white;
+}

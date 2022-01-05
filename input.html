@@ -3,26 +3,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.js">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <div>
-            <h5>CALORIE CALCULATOR</h5>
-            <small>Age</small>
-            <input type="text">
-            <small>Gender</small>
-            <select name="" id="">
-                <option value="">Male</option>
-                <option value="">Female</option>
-            </select>
-            <small>Height</small>
-            <input type="text">
-            <small>Weight</small>
-            <input type="text">
-            <small>Activity</small>
-            <select name="" id="">
-                <option value="">Basal Metabolic Rate (BMR)</option>
+    <form class="flex-container" action="calorie-tracking.html">
+            
+        <h6 class="container-name">CALORIE CALCULATOR</h6>
+        
+        <div class="input-margin">
+            <label class="age-margin">Age</label>
+            <input type="text" class="textbox">   
+        </div>
+
+        <div class="input-margin">
+            <label class="gender-margin">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </div>
+        
+        <div class="input-margin">
+            <label class="height-margin">Height</label>
+            <input type="text" class="textbox">
+        </div>
+
+        <div class="input-margin">
+            <label>Weight</label>
+            <input type="text" class="textbox">
+        </div>
+       
+        <div class="input-margin">
+            <label>Activity</label>
+            <select class="select-margin">
+                <option value="" class="option-margin">Basal Metabolic Rate (BMR)</option>
                 <option value="">Sedentary: little or no exercise</option>
                 <option value="">Light: little or no exercise</option>
                 <option value="">Moderate: exercise 4-5 times/week</option>
@@ -30,11 +45,9 @@
                 <option value="">Very Active: intense exercise 6-7 times/week</option>
                 <option value="">Extremely Active: very intense exercise daily, or physical job</option>
             </select>
-
-            <a href="calorie-tracking.html">
-                <button>Calculate</button>
-            </a>
         </div>
-    </div>
+        
+        <button class="button">Calculate</button>
+    </form>
 </body>
 </html>
