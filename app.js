@@ -17,25 +17,29 @@ function calculate(){
         // bmr = (10*65)+(6.25*180) - (5*15) - 161;
     }
 
+    if (option=="BMR"){
+        calories = bmr;
+    }
+
     if (option=="Sedentary"){
-        calories = bmr*1.2
+        calories = bmr*1.2;
     }
     if (option=="Light"){
-        calories = bmr*1.375
+        calories = bmr*1.375;
     }
     if (option=="Moderate"){
-        calories = bmr*1.55
+        calories = bmr*1.55;
     }
     if (option=="Very"){
-        calories = bmr*1.725
+        calories = bmr*1.725;
     }
 
-    sessionStorage.setItem("bmr", bmr)
-    sessionStorage.setItem("calories", calories);
+    sessionStorage.setItem("option",option);
+    sessionStorage.setItem("calories", calories+" Calories/day");
 
-    alert(bmr+" "+calories);
+    // alert(bmr+" "+calories);
 }
 
-document.getElementById('displayBMR').innerHTML = sessionStorage.getItem("bmr");
+document.getElementById('optionSelected').innerHTML = sessionStorage.getItem("option");
 document.getElementById('displayCalories').innerHTML = sessionStorage.getItem("calories");
 window.onreset = sessionStorage.clear();

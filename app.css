@@ -30,6 +30,18 @@ body{
     background-color: rgba(153, 153, 153, 0.671);
 }
 
+.button{
+    margin-top: 30px;
+    /* margin-left: 30px; */
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 108, 55);
+    color: white;
+}
+
+/* Input.html */
 .input-margin{
     margin: 10px 0px;
 }
@@ -67,13 +79,24 @@ body{
     border: none;
 }
 
-.button{
-    margin-top: 30px;
-    /* margin-left: 30px; */
-    height: 40px;
-    width: 400px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(255, 108, 55);
-    color: white;
+/*Calorie-Tracking.html*/
+
+.calories-container{
+    margin-bottom: 20px;
+}
+
+.caloriesLabel{
+    width: 20%;
+    padding: 20px 110px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.calories-display-box{
+    padding: 20px 21px;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 10px;
 }
