@@ -13,10 +13,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container-name{
     font-size: 25px;
+    margin: 50px 0px;
 }
 
 .flex-container{
@@ -32,12 +34,12 @@ body{
 
 .button{
     margin-top: 30px;
-    /* margin-left: 30px; */
     height: 40px;
-    width: 400px;
+    width: 500px;
     border: none;
     border-radius: 10px;
     background-color: rgb(255, 108, 55);
+    align-items: column center;
     color: white;
 }
 
@@ -79,24 +81,42 @@ body{
     border: none;
 }
 
+.food-margin{
+    font-size: medium;
+    margin-left: 2px;
+    width: 300px;
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* background-color: rgb(255, 255, 255); */
+    border: none;
+}
+
 /*Calorie-Tracking.html*/
 
 .calories-container{
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center column;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin: 10px 0px;  
 }
 
 .caloriesLabel{
-    width: 20%;
-    padding: 20px 110px;
+    margin: 5px 10px;
+    padding: 20px 40px;
+    /* width: ; */
     background-color: white;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .calories-display-box{
-    padding: 20px 21px;
-    background-color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin-left: 20px;
+    padding: 20px 50px;
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border-radius: 0px 5px 5px 5px;
 }
