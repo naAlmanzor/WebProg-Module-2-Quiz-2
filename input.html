@@ -5,49 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="app.js">
     <title>Document</title>
 </head>
 <body>
-    <form class="flex-container" action="calorie-tracking.html">
+    <form class="flex-container" action="calorie-tracking.html" id="caloriesCalc">
             
         <h6 class="container-name">CALORIE CALCULATOR</h6>
         
         <div class="input-margin">
             <label class="age-margin">Age</label>
-            <input type="text" class="textbox">   
+            <input type="number" class="textbox" id="ageVal">   
         </div>
 
         <div class="input-margin">
             <label class="gender-margin">Gender</label>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
         </div>
         
         <div class="input-margin">
             <label class="height-margin">Height</label>
-            <input type="text" class="textbox">
+            <input type="number" class="textbox" id="heightVal">
         </div>
 
         <div class="input-margin">
             <label>Weight</label>
-            <input type="text" class="textbox">
+            <input type="number" class="textbox" id="weightVal">
         </div>
        
         <div class="input-margin">
             <label>Activity</label>
-            <select class="select-margin">
-                <option value="" class="option-margin">Basal Metabolic Rate (BMR)</option>
-                <option value="">Sedentary: little or no exercise</option>
-                <option value="">Light: little or no exercise</option>
-                <option value="">Moderate: exercise 4-5 times/week</option>
-                <option value="">Active: daily exercise or intense exercise 3-4 times/week</option>
-                <option value="">Very Active: intense exercise 6-7 times/week</option>
-                <option value="">Extremely Active: very intense exercise daily, or physical job</option>
+            <select class="select-margin" id="activitySelect">
+                <option value="Sedentary" name="option">Sedentary: little or no exercise</option>
+                <option value="Light" name="option">Light: little or no exercise</option>
+                <option value="Moderate" name="option">Moderate: exercise 4-5 times/week</option>
+                <option value="Very" name="option">Very Active: intense exercise 6-7 times/week</option>
             </select>
         </div>
-        
-        <button class="button">Calculate</button>
+       
+        <button class="button" id="calcBtn" onclick="calculate()">Calculate</button>
     </form>
 </body>
+
+<script src="app.js"></script>
 </html>
