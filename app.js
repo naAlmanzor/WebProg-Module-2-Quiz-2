@@ -47,19 +47,21 @@ function calculate(){
                 calories = bmr;
                 break;
         }
-
         document.getElementById("caloriesCalc").action = "calorie-tracking.html"
     }
     
-
+    // Sets Item for next page
     sessionStorage.setItem("option",option);
     sessionStorage.setItem("calories", calories+" calories/day");
     sessionStorage.setItem("foodName", "With "+foodName);
     sessionStorage.setItem("foodCalories", (calories-foodData)+" calories/day");
 }
 
-document.getElementById('optionSelected').innerHTML = sessionStorage.getItem("option");
-document.getElementById('displayCalories').innerHTML = sessionStorage.getItem("calories");
-document.getElementById('foodNameDisplay').innerHTML = sessionStorage.getItem("foodName");
-document.getElementById('foodCalories').innerHTML = sessionStorage.getItem("foodCalories");
-window.onreset = sessionStorage.clear();
+function onLoad(){
+    document.getElementById('optionSelected').innerHTML = sessionStorage.getItem("option");
+    document.getElementById('displayCalories').innerHTML = sessionStorage.getItem("calories");
+    document.getElementById('foodNameDisplay').innerHTML = sessionStorage.getItem("foodName");
+    document.getElementById('foodCalories').innerHTML = sessionStorage.getItem("foodCalories");
+}
+
+window.onload = onLoad();
