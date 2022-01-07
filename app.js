@@ -47,7 +47,7 @@ function calculate(){
                 calories = bmr;
                 break;
         }
-        document.getElementById("caloriesCalc").action = "calorie-tracking.html"
+        document.getElementById("caloriesCalc").action = "result.html"
     }
     
     // Sets Item for next page
