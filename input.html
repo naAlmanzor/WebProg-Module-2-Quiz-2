@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h6 class="container-name">CALORIE CALCULATOR</h6>
+    <h6 class="container-name">CALORIE CALCULATOR FORM</h6>
 
-    <form class="flex-container" action="calorie-tracking.html" id="caloriesCalc">
+    <form class="flex-container" id="caloriesCalc">
         
         <div class="input-margin">
             <label class="age-margin">Age</label>
@@ -19,7 +19,7 @@
 
         <div class="input-margin">
             <label class="gender-margin">Gender</label>
-            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Male" checked="checked">Male
             <input type="radio" name="gender" value="Female">Female
         </div>
         
@@ -49,9 +49,11 @@
             <input type="text" class="textbox" id="foodName">
             <input type="number" class="textbox" id="foodCalories" placeholder="Calories">
         </div>
-       
-        <button class="button" id="calcBtn" onclick="calculate()">Calculate</button>
+
+        <button class="button" id="calcBtn" onclick="calculate()">Calculate</button>    
     </form>
+
+  
 </body>
 
 <script src="app.js"></script>
