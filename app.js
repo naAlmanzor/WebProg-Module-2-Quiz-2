@@ -16,31 +16,36 @@ function calculate(){
 
     else{
 
-        if(genderData == 'Male'){
-            bmr = (10*weightData)+(6.25*heightData) - (5*ageData) + 5
-            // bmr = (10*65)+(6.25*180) - (5*15) + 5;
+        // Check Gender
+        switch (genderData){
+            case "Male":
+                bmr = (10*weightData)+(6.25*heightData) - (5*ageData) + 5
+            break;
+
+            case "Female":
+                bmr = (10*weightData)+(6.25*heightData) - (5*ageData) - 161
+            break;
         }
-    
-        if(genderData == 'Female'){
-            bmr = (10*weightData)+(6.25*heightData) - (5*ageData) - 161
-            // bmr = (10*65)+(6.25*180) - (5*15) - 161;
-        }    
- 
-        if (option=="BMR"){
-            calories = bmr;
-        }
-    
-        if (option=="Sedentary"){
-            calories = bmr*1.2;
-        }
-        if (option=="Light"){
-            calories = bmr*1.375;
-        }
-        if (option=="Moderate"){
-            calories = bmr*1.55;
-        }
-        if (option=="Very Active"){
-            calories = bmr*1.725;
+        
+        // Check activity selected
+        switch (option){
+            case "BMR":
+                calories = bmr;
+                break;
+            case "Sedentary":
+                calories = bmr;
+                break;
+            case "Light":
+                calories = bmr;
+                break;
+
+            case "Moderate":
+                calories = bmr;
+                break;
+            
+            case "Very Active":
+                calories = bmr;
+                break;
         }
 
         document.getElementById("caloriesCalc").action = "calorie-tracking.html"
